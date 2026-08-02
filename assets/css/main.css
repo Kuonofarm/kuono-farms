@@ -3922,8 +3922,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	background-color: #ffffff;
 	position: relative;
 	margin: 0 auto;
-	width: calc(100% - 6rem);
-	max-width: 82rem;
+	width: calc(100% - 4rem);
+	max-width: 72rem;
 	z-index: 2;
 }
 
