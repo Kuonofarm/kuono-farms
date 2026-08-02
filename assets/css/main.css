@@ -4884,33 +4884,70 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 10px;
 }
-
 /* =====================================================
    KU'ONO FARM CUSTOM STYLES
 ===================================================== */
 
-/* Make the white content panel wider */
-#main {
+/* ---------- GLOBAL PAGE WIDTH ---------- */
+
+#nav,
+#main,
+#footer,
+#copyright {
     width: calc(100% - 6rem);
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Featured section */
+/* ---------- HERO ---------- */
+
 .post.featured {
     max-width: 100%;
     margin: 0 auto 5rem auto;
 }
 
-/* Signup section */
-.post {
-    max-width: 900px;
-    margin: 0 auto;
+.post.featured header.major {
+    max-width: 850px;
+    margin: 0 auto 3rem auto;
 }
 
-/* Gallery */
+.post.featured .image.main {
+    margin-top: 3rem;
+}
+
+/* ---------- GENERAL SECTIONS ---------- */
+
+.post {
+    max-width: 100%;
+    padding: 5rem 0;
+}
+
+.post header.major {
+    max-width: 850px;
+    margin: 0 auto 3rem auto;
+}
+
+.post header.major p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- MAILING LIST ---------- */
+
+.post iframe {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border: none;
+}
+
+/* ---------- GALLERY ---------- */
+
 .posts {
-    max-width: 1450px;
+    max-width: 100%;
     margin: 5rem auto;
 }
 
@@ -4918,11 +4955,12 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
     padding: 1rem;
 }
 
-/* Images */
+/* ---------- PHOTOS ---------- */
+
 .image img {
     border-radius: 12px;
-    transition: transform .4s ease,
-                box-shadow .4s ease;
+    transition: transform .35s ease,
+                box-shadow .35s ease;
 }
 
 .image:hover img {
@@ -4930,37 +4968,50 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
     box-shadow: 0 18px 35px rgba(0,0,0,.18);
 }
 
-/* Intro */
+/* ---------- INTRO ---------- */
+
 #intro h1 {
     font-size: 5rem;
-    letter-spacing: .15em;
+    letter-spacing: .12em;
 }
 
 #intro p {
-    font-size: 1.35rem;
-    line-height: 1.8;
     max-width: 700px;
     margin: 2rem auto;
+    font-size: 1.3rem;
+    line-height: 1.8;
 }
 
-/* Headings */
+/* ---------- HEADINGS ---------- */
+
 .major h2 {
     font-size: 2.8rem;
 }
 
 .major p {
     font-size: 1.15rem;
-    line-height: 2;
+    line-height: 1.9;
 }
 
-/* Buttons */
+/* ---------- BUTTONS ---------- */
+
 .button {
-    border-radius: 40px;
-    padding: 0 2.5rem;
+    border-radius: 999px;
 }
 
-/* Section spacing */
-.post {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+/* ---------- MOBILE ---------- */
+
+@media screen and (max-width: 980px) {
+
+    #nav,
+    #main,
+    #footer,
+    #copyright {
+        width: calc(100% - 2rem);
+    }
+
+    #intro h1 {
+        font-size: 3.5rem;
+    }
+
 }
