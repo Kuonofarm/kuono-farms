@@ -3922,8 +3922,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 	background-color: #ffffff;
 	position: relative;
 	margin: 0 auto;
-	width: calc(100% - 4rem);
-	max-width: 72rem;
+	width: calc(100% - 6rem);
+	max-width: 82rem;
 	z-index: 2;
 }
 
@@ -3942,7 +3942,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 #main>.post {
-	padding: 8rem 8rem 6rem 8rem;
+	padding: 7rem 9rem 6rem 9rem;
 }
 
 #main>.post header.major>.date {
@@ -3958,6 +3958,14 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 #main>.post.featured {
 	text-align: center;
+}
+
+#main > .post.featured p {
+	font-size: 1.2rem;
+	line-height: 2;
+	max-width: 42rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media screen and (max-width: 1280px) {
