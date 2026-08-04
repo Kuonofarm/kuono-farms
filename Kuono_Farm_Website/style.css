@@ -1,1 +1,10 @@
-:root{--bg:#f7f5f0;--paper:#fcfbf8;--green:#364a38;--text:#2d2d2d}*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}nav{position:fixed;top:0;width:100%;display:flex;justify-content:center;gap:2rem;padding:1rem;background:#ffffffee}nav a{text-decoration:none;color:var(--green);font-weight:bold}header.hero{height:90vh;background:url('images/hero.jpg') center/cover;display:flex;align-items:center;justify-content:center;position:relative}header.hero:before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.35)}.hero-content{position:relative;color:#fff;text-align:center}.button{display:inline-block;padding:12px 24px;background:var(--green);color:#fff;text-decoration:none;border-radius:30px}section{max-width:1200px;margin:auto;padding:5rem 2rem}.cards,.team,.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}.card{background:var(--paper);padding:1.5rem;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.08)}img{width:100%;border-radius:12px}footer{background:var(--green);color:white;text-align:center;padding:3rem}
+body{margin:0;font-family:Georgia,serif;background:#f7f5f0;color:#2f2f2f;line-height:1.7}
+nav{position:fixed;top:0;width:100%;background:rgba(255,255,255,.9);padding:16px;text-align:center}
+nav a{margin:0 18px;text-decoration:none;color:#304031;font-weight:bold}
+.hero{height:100vh;background:url('images/haleakala.jpg') center/cover no-repeat;display:flex;align-items:flex-end}
+.overlay{background:linear-gradient(transparent,rgba(0,0,0,.65));width:100%;padding:60px;color:white}
+section{max-width:1100px;margin:auto;padding:70px 25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{background:#fff;padding:24px;border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+img.full{width:100%;border-radius:14px}
+footer{background:#304031;color:#fff;text-align:center;padding:40px}
